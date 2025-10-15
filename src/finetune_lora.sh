@@ -1,0 +1,32 @@
+deepspeed  /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord/src/custom_train.py \
+    --version v0 \
+    --model_name_or_path microsoft/Phi-3-mini-4k-instruct  \
+    --model_type phi3 \
+    --lora_enable True \
+    --vision_tower vit3d \
+    --pretrain_mm_mlp_adapter /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord/src/mm_projector.bin \
+    --pretrain_vision_model /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord/src/pretrained_ViT.bin \
+    --data_root /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord\
+    --amos_train_cap_data_path /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord/src/kfold_splits/S1_composite_grok/fold_5_image/train.csv\
+    --amos_validation_cap_data_path /acfs-home/hoh4002/serag_AI_lab/users/hoh4002/eICU/Spinal_cord/src/kfold_splits/S1_composite_grok/fold_5_image/val.csv\
+    --bf16 True \
+    --output_dir ./output/LaMed-finetune-0000-S1-composite-grok-fold-5\
+    --num_train_epochs 2 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 1 \
+    --evaluation_strategy "steps" \
+    --eval_accumulation_steps 1 \
+    --eval_steps 0.1 \
+    --save_strategy "epoch" \
+    --save_steps 1 \
+    --save_total_limit 10 \
+    --learning_rate 5e-4 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 0.001 \
+    --gradient_checkpointing False \
+    --dataloader_pin_memory True\
+    --dataloader_num_workers 32 \
+    --report_to none
