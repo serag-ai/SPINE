@@ -40,7 +40,7 @@ Replace `PATH_TO_MERGED_WEIGHTS` with your fine-tuned model path.
     - **10 folds** for axial dataset
     - **5 folds** for sagittal dataset
   - 📎 [Axial dataset link](https://doi.org/10.17632/zbf6b4pttk.2)  
-  - 📎 [Sagittal dataset link](https://zenodo.org/records/10159290)
+  -  [Sagittal dataset link](https://zenodo.org/records/10159290)
 
 - **Modalities**: T1, T2, segmentation  
 - **Language Supervision**: Structured vs. natural language  
