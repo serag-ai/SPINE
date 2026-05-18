@@ -1,4 +1,5 @@
 # SPINE: Segmentation-guided Processing and Integration of multimodal spinal MRI for Natural-language Enhanced report generation
+[![Journal Paper](https://img.shields.io/badge/Journal-Paper-red.svg)]((https://www.tandfonline.com/doi/full/10.1080/08839514.2026.2626117))
 
 We propose **SPINE**, a segmentation-guided, multimodal framework for generating spinal MRI reports using 3D vision–language models. The framework integrates **T1- and T2-weighted MRI** with **anatomical segmentation** to enhance spatial and contextual understanding of spinal structures.
 
@@ -9,6 +10,8 @@ We propose **SPINE**, a segmentation-guided, multimodal framework for generating
 SPINE leverages multimodal input (T1, T2, and segmentation) to generate radiology reports for spinal MRI. Experiments were conducted on two public datasets: **515 axial** and **190 sagittal** cases. Three input configurations were explored, with **T1+T2+segmentation (V3)** achieving the best performance on the axial dataset.  
 
 For sagittal data, structured gradings were converted into narrative reports using GPT-4o and Grok-3, enabling controlled language generation. Structured supervision improved semantic consistency and accuracy. These results emphasize the value of combining anatomical priors with structured language for reliable spinal MRI reporting.
+
+![Model Architecture](figure_1.jpg)
 
 ---
 
