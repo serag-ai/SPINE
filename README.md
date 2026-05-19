@@ -1,7 +1,7 @@
 
 
 [![Conference Version Paper](https://img.shields.io/badge/Conference-Paper-blue.svg)](https://link.springer.com/chapter/10.1007/978-3-032-07502-4_14)
-[![Journal Paper](https://img.shields.io/badge/Journal-Paper-red.svg)]((https://www.tandfonline.com/doi/full/10.1080/08839514.2026.2626117))
+[![Journal Paper](https://img.shields.io/badge/Journal-Paper-red.svg)](https://www.tandfonline.com/doi/full/10.1080/08839514.2026.2626117)
 [![Hugging Face Model](https://img.shields.io/badge/🤗-HuggingFace_Model-yellow)](https://huggingface.co/serag-ai/Best-Fold-SPINE-Axial)
 # SPINE: Segmentation-guided Processing and Integration of multimodal spinal MRI for Natural-language Enhanced report generation
 
