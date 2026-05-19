@@ -54,7 +54,25 @@ Replace `PATH_TO_MERGED_WEIGHTS` with your fine-tuned model path.
 - **Evaluation**: Report generation quality and consistency
 
 ---
+## Citation
 
+If you use this work in your research, please cite:
+
+```bibtex
+@article{Helmy31122026,
+  author = {Hoda Helmy and Abdullah Hosseini and Ahmed Ibrahim and Asfand Baig-Mirza and Ahmed-Ramadan Sadek and Ahmed Serag},
+  title = {SPINE: Segmentation-guided Processing and Integration of Multimodal Spinal MRI for Natural-Language Enhanced Report Generation},
+  journal = {Applied Artificial Intelligence},
+  volume = {40},
+  number = {1},
+  pages = {2626117},
+  year = {2026},
+  publisher = {Taylor \& Francis},
+  doi = {10.1080/08839514.2026.2626117},
+  url = {https://doi.org/10.1080/08839514.2026.2626117}
+}
+```
+---
 ## Acknowledgements
 
 This project builds upon open source projects: 
